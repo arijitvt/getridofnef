@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tools.setuptools.packages]
+find = {}
+
+
+[project]
+name="getridofnefs"
+version="0.0.1"
+dependencies= [
+    'rawpy',
+	'imageio',
+    'importlib-metadata; python_version<"3.8"',
+	
+]
+[project.scripts]
+getridofnef = "arijit.getridofnef.main:main"
+
+
+
